@@ -83,8 +83,10 @@ if __name__ == "__main__":
     files = find_file(folder=root_dir, reg_pattern=java_extensions_pattern)
     for file_path in files:
         print(extract_dependencies(f_path=file_path, reg_pattern=dependencies_pattern))
-
     dependency_graph = create_dependency_graph(root_dir, java_extensions_pattern, dependencies_pattern)
+    desired_width = 800
+    size = f'{desired_width},{desired_width}'
+    dependency_graph.graph_attr['size'] = size  # Set width=8 inches, height=6 inches
     output_file = "dependency_graph.png"
     dependency_graph.draw(output_file, format='png', prog='dot')
     print(f"Dependency graph saved as {output_file}")
