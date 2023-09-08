@@ -1,0 +1,7 @@
+// Class Diagram
+digraph {
+	graph [rankdir=TB]
+	Example [label="Example\n{'public', 'static'} printHello()"]
+	Utils [label=Utils shape=box]
+	Example -> Utils [dir=none]
+}

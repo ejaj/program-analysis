@@ -1,0 +1,5 @@
+// Class Diagram
+digraph {
+	graph [rankdir=TB]
+	Utils [label="Utils\n{'public', 'static'} println()"]
+}

@@ -1,0 +1,8 @@
+// Class Diagram
+digraph {
+	graph [rankdir=TB]
+	Tricky [label="Tricky\n"]
+	simple [label=simple shape=box]
+	util [label=util shape=box]
+	Other [label=Other shape=box]
+}
