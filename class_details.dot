@@ -1,0 +1,20 @@
+digraph ClassDetails {
+	Class [label="Class
+Name: dtu/deps/simple/Example
+Access Flags: ['public', 'super']"]
+	Fields [label=Fields]
+	Field_other [label="Name: other
+Type: dtu/deps/simple/Other"]
+	Fields -> Field_other [label=Has]
+	Methods [label=Methods]
+	"Method_<init>" [label="Name: <init>
+Access Flags: ['public']
+Parameters: 
+Returns: None"]
+	Methods -> "Method_<init>" [label=Has]
+	Method_main [label="Name: main
+Access Flags: ['public', 'static']
+Parameters: java/lang/String: array
+Returns: None"]
+	Methods -> Method_main [label=Has]
+}
